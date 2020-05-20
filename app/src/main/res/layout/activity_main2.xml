@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity2_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main2Activity">
+
+
+    <Button
+        android:id="@+id/synchronousGet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="onClick"
+        android:text="Refresh" />
+
+<!--    <Button-->
+<!--        android:id="@+id/asynchronousPost"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/synchronousGet"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:onClick="onClick"-->
+<!--        android:text="LED YES" />-->
+
+
+    <ImageButton
+        android:id="@+id/asynchronousPost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/synchronousGet"
+        android:layout_centerHorizontal="true"
+        android:onClick="onClick"
+        app:srcCompat="@drawable/led_on" />
+
+
+<!--    <Button-->
+<!--        android:id="@+id/asynchronousPostNo"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/asynchronousPost"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:onClick="onClick"-->
+<!--        android:text="Led No" />-->
+
+
+
+    <ImageButton
+        android:id="@+id/asynchronousPostNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/asynchronousPost"
+        android:layout_centerHorizontal="true"
+        android:onClick="onClick"
+        app:srcCompat="@drawable/led_off" />
+
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/txtString"
+        android:layout_below="@+id/asynchronousPostNo"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="184dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="224dp"
+        android:layout_marginTop="522dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="25dp"
+        android:onClick="page2"
+        android:text="Température" />
+
+
+</RelativeLayout>
